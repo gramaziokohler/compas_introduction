@@ -30,6 +30,32 @@ def movel_to_joints(config, speed, accel, nowait, ip="127.0.0.1"):
     ur_c = RTDEControl(ip)
     ur_c.moveL_FK(config.joint_values, speed, accel, nowait)
 
+def move_to_target(frame, speed, accel, radius, ip="127.0.0.1"):
+    # speed rad/s, accel rad/s^2, nowait bool
+    pose = *frame.point,*frame.axis_angle_vector
+    ur_c = RTDEControl(ip)
+    ur_c.moveL(pose ,speed, accel, radius)
+    return pose
+
+def create_path(frames, speed, accel, radius):
+    # speed rad/s, accel rad/s^2, nowait bool
+    path = []
+    for f in frames:
+        pose = f.point.x/1000, f.point.y/1000, f.point.z/1000, *f.axis_angle_vector
+        target = [*pose,speed,accel, radius]
+        path.append(target)
+    return path
+
+def move_to_path(frames, speed, accel, radius, ip = "127.0.0.1"):
+    # speed rad/s, accel rad/s^2, nowait bool
+    ur_c = RTDEControl(ip)
+    path = create_path(frames, speed, accel, radius)
+    ur_c.moveL(path, True)
+    return path
+
+def stop(accel, ip = "127.0.0.1"):
+    ur_c = RTDEControl(ip)
+    ur_c.stopL(accel)
 
 def get_digital_io(signal, ip="127.0.0.1"):
     ur_r = RTDEReceive(ip)
@@ -57,7 +83,6 @@ def move_trajectory(configurations, speed, accel, blend, ur_c):
     path = []
     for config in configurations:
         path.append(config.joint_values + [speed, accel, blend])
-
     if len(path):
         ur_c.moveJ(path)
 
@@ -73,6 +98,7 @@ def stop_teach_mode(ip="127.0.0.1"):
 
 
 if __name__ == "__main__":
-    ip = "127.0.0.1"
-    frame = get_tcp_frame(ip)
-    print(frame)
+    pass
+    # ip = "127.0.0.1"
+    # frame = get_tcp_frame(ip)
+    # print(frame)
