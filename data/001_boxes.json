@@ -1,0 +1,688 @@
+{
+    "center": [
+        {
+            "dtype": "compas.geometry/Frame", 
+            "guid": "3da7b32c-438c-4b38-9abc-eecd16552959", 
+            "value": {
+                "point": [
+                    0.0, 
+                    0.0, 
+                    0.0
+                ], 
+                "xaxis": [
+                    1.0, 
+                    0.0, 
+                    0.0
+                ], 
+                "yaxis": [
+                    0.0, 
+                    1.0, 
+                    0.0
+                ]
+            }
+        }, 
+        {
+            "dtype": "compas.geometry/Frame", 
+            "guid": "00b69dd8-d224-4422-bcf2-1ad81755a45e", 
+            "value": {
+                "point": [
+                    52.5, 
+                    0.0, 
+                    0.0
+                ], 
+                "xaxis": [
+                    1.0, 
+                    0.0, 
+                    0.0
+                ], 
+                "yaxis": [
+                    0.0, 
+                    1.0, 
+                    0.0
+                ]
+            }
+        }, 
+        {
+            "dtype": "compas.geometry/Frame", 
+            "guid": "34198c81-1e55-486a-9c2f-2870544f3058", 
+            "value": {
+                "point": [
+                    105.0, 
+                    0.0, 
+                    0.0
+                ], 
+                "xaxis": [
+                    1.0, 
+                    0.0, 
+                    0.0
+                ], 
+                "yaxis": [
+                    0.0, 
+                    1.0, 
+                    0.0
+                ]
+            }
+        }, 
+        {
+            "dtype": "compas.geometry/Frame", 
+            "guid": "bc1a054c-78fb-49f3-8c31-15a0d65b5282", 
+            "value": {
+                "point": [
+                    157.5, 
+                    0.0, 
+                    0.0
+                ], 
+                "xaxis": [
+                    1.0, 
+                    0.0, 
+                    0.0
+                ], 
+                "yaxis": [
+                    0.0, 
+                    1.0, 
+                    0.0
+                ]
+            }
+        }, 
+        {
+            "dtype": "compas.geometry/Frame", 
+            "guid": "6aa03618-9c56-455d-9912-40e153a023e7", 
+            "value": {
+                "point": [
+                    210.0, 
+                    0.0, 
+                    0.0
+                ], 
+                "xaxis": [
+                    1.0, 
+                    0.0, 
+                    0.0
+                ], 
+                "yaxis": [
+                    0.0, 
+                    1.0, 
+                    0.0
+                ]
+            }
+        }, 
+        {
+            "dtype": "compas.geometry/Frame", 
+            "guid": "d9aad8af-d71d-4fd6-a94d-bf42e04fbc44", 
+            "value": {
+                "point": [
+                    262.5, 
+                    0.0, 
+                    0.0
+                ], 
+                "xaxis": [
+                    1.0, 
+                    0.0, 
+                    0.0
+                ], 
+                "yaxis": [
+                    0.0, 
+                    1.0, 
+                    0.0
+                ]
+            }
+        }, 
+        {
+            "dtype": "compas.geometry/Frame", 
+            "guid": "97f30638-715c-4f73-87da-cc196b5bf3b9", 
+            "value": {
+                "point": [
+                    315.0, 
+                    0.0, 
+                    0.0
+                ], 
+                "xaxis": [
+                    1.0, 
+                    0.0, 
+                    0.0
+                ], 
+                "yaxis": [
+                    0.0, 
+                    1.0, 
+                    0.0
+                ]
+            }
+        }, 
+        {
+            "dtype": "compas.geometry/Frame", 
+            "guid": "0a98b201-176d-48a4-92c1-6add3000fc5d", 
+            "value": {
+                "point": [
+                    367.5, 
+                    0.0, 
+                    0.0
+                ], 
+                "xaxis": [
+                    1.0, 
+                    0.0, 
+                    0.0
+                ], 
+                "yaxis": [
+                    0.0, 
+                    1.0, 
+                    0.0
+                ]
+            }
+        }, 
+        {
+            "dtype": "compas.geometry/Frame", 
+            "guid": "89de5021-f1fd-42fb-946b-159e89e1424f", 
+            "value": {
+                "point": [
+                    420.0, 
+                    0.0, 
+                    0.0
+                ], 
+                "xaxis": [
+                    1.0, 
+                    0.0, 
+                    0.0
+                ], 
+                "yaxis": [
+                    0.0, 
+                    1.0, 
+                    0.0
+                ]
+            }
+        }, 
+        {
+            "dtype": "compas.geometry/Frame", 
+            "guid": "841444e8-9b7d-4e23-83e8-f8f3749b3ac2", 
+            "value": {
+                "point": [
+                    472.5, 
+                    0.0, 
+                    0.0
+                ], 
+                "xaxis": [
+                    1.0, 
+                    0.0, 
+                    0.0
+                ], 
+                "yaxis": [
+                    0.0, 
+                    1.0, 
+                    0.0
+                ]
+            }
+        }
+    ], 
+    "frame": [
+        {
+            "dtype": "compas.geometry/Frame", 
+            "guid": "fc04fb00-a324-4a7d-98cf-c622d1a209a4", 
+            "value": {
+                "point": [
+                    0.0, 
+                    0.0, 
+                    6.25
+                ], 
+                "xaxis": [
+                    1.0, 
+                    0.0, 
+                    0.0
+                ], 
+                "yaxis": [
+                    0.0, 
+                    1.0, 
+                    0.0
+                ]
+            }
+        }, 
+        {
+            "dtype": "compas.geometry/Frame", 
+            "guid": "7aafd461-da67-4e78-b03b-00f27f1bd406", 
+            "value": {
+                "point": [
+                    52.5, 
+                    0.0, 
+                    6.25
+                ], 
+                "xaxis": [
+                    1.0, 
+                    0.0, 
+                    0.0
+                ], 
+                "yaxis": [
+                    0.0, 
+                    1.0, 
+                    0.0
+                ]
+            }
+        }, 
+        {
+            "dtype": "compas.geometry/Frame", 
+            "guid": "2bf834c2-9de4-4d35-ae1d-41a696d27a62", 
+            "value": {
+                "point": [
+                    105.0, 
+                    0.0, 
+                    6.25
+                ], 
+                "xaxis": [
+                    1.0, 
+                    0.0, 
+                    0.0
+                ], 
+                "yaxis": [
+                    0.0, 
+                    1.0, 
+                    0.0
+                ]
+            }
+        }, 
+        {
+            "dtype": "compas.geometry/Frame", 
+            "guid": "f0216c2a-4708-4750-9c98-cc94e4da3f63", 
+            "value": {
+                "point": [
+                    157.5, 
+                    0.0, 
+                    6.25
+                ], 
+                "xaxis": [
+                    1.0, 
+                    0.0, 
+                    0.0
+                ], 
+                "yaxis": [
+                    0.0, 
+                    1.0, 
+                    0.0
+                ]
+            }
+        }, 
+        {
+            "dtype": "compas.geometry/Frame", 
+            "guid": "06761155-d536-4815-9bd1-91de2368bf20", 
+            "value": {
+                "point": [
+                    210.0, 
+                    0.0, 
+                    6.25
+                ], 
+                "xaxis": [
+                    1.0, 
+                    0.0, 
+                    0.0
+                ], 
+                "yaxis": [
+                    0.0, 
+                    1.0, 
+                    0.0
+                ]
+            }
+        }, 
+        {
+            "dtype": "compas.geometry/Frame", 
+            "guid": "b03e3470-23e5-4e25-aaa4-9b48dc90a9b2", 
+            "value": {
+                "point": [
+                    262.5, 
+                    0.0, 
+                    6.25
+                ], 
+                "xaxis": [
+                    1.0, 
+                    0.0, 
+                    0.0
+                ], 
+                "yaxis": [
+                    0.0, 
+                    1.0, 
+                    0.0
+                ]
+            }
+        }, 
+        {
+            "dtype": "compas.geometry/Frame", 
+            "guid": "46ad3738-0e35-4f3b-891f-df084793d255", 
+            "value": {
+                "point": [
+                    315.0, 
+                    0.0, 
+                    6.25
+                ], 
+                "xaxis": [
+                    1.0, 
+                    0.0, 
+                    0.0
+                ], 
+                "yaxis": [
+                    0.0, 
+                    1.0, 
+                    0.0
+                ]
+            }
+        }, 
+        {
+            "dtype": "compas.geometry/Frame", 
+            "guid": "98d33aba-d236-486c-a7d0-d066d33d5dc6", 
+            "value": {
+                "point": [
+                    367.5, 
+                    0.0, 
+                    6.25
+                ], 
+                "xaxis": [
+                    1.0, 
+                    0.0, 
+                    0.0
+                ], 
+                "yaxis": [
+                    0.0, 
+                    1.0, 
+                    0.0
+                ]
+            }
+        }, 
+        {
+            "dtype": "compas.geometry/Frame", 
+            "guid": "49e15c3e-3a4d-4e9c-8038-f96d09ff3bee", 
+            "value": {
+                "point": [
+                    420.0, 
+                    0.0, 
+                    6.25
+                ], 
+                "xaxis": [
+                    1.0, 
+                    0.0, 
+                    0.0
+                ], 
+                "yaxis": [
+                    0.0, 
+                    1.0, 
+                    0.0
+                ]
+            }
+        }, 
+        {
+            "dtype": "compas.geometry/Frame", 
+            "guid": "8aaf7759-45f8-4644-b90b-ce50af4baa87", 
+            "value": {
+                "point": [
+                    472.5, 
+                    0.0, 
+                    6.25
+                ], 
+                "xaxis": [
+                    1.0, 
+                    0.0, 
+                    0.0
+                ], 
+                "yaxis": [
+                    0.0, 
+                    1.0, 
+                    0.0
+                ]
+            }
+        }
+    ], 
+    "mesh": [
+        {
+            "dtype": "compas.geometry/Box", 
+            "guid": "de43aaac-3ddc-49c3-8750-aa4d10f06498", 
+            "value": {
+                "frame": {
+                    "point": [
+                        0.0, 
+                        0.0, 
+                        0.0
+                    ], 
+                    "xaxis": [
+                        1.0, 
+                        0.0, 
+                        0.0
+                    ], 
+                    "yaxis": [
+                        0.0, 
+                        1.0, 
+                        0.0
+                    ]
+                }, 
+                "xsize": 50.0, 
+                "ysize": 25.0, 
+                "zsize": 12.5
+            }
+        }, 
+        {
+            "dtype": "compas.geometry/Box", 
+            "guid": "bd6a2651-cecf-4149-bd19-144ce8064d4b", 
+            "value": {
+                "frame": {
+                    "point": [
+                        52.5, 
+                        0.0, 
+                        0.0
+                    ], 
+                    "xaxis": [
+                        1.0, 
+                        0.0, 
+                        0.0
+                    ], 
+                    "yaxis": [
+                        0.0, 
+                        1.0, 
+                        0.0
+                    ]
+                }, 
+                "xsize": 50.0, 
+                "ysize": 25.0, 
+                "zsize": 12.5
+            }
+        }, 
+        {
+            "dtype": "compas.geometry/Box", 
+            "guid": "9b6a06d2-90d1-41e0-ac35-6d5866e8dddb", 
+            "value": {
+                "frame": {
+                    "point": [
+                        105.0, 
+                        0.0, 
+                        0.0
+                    ], 
+                    "xaxis": [
+                        1.0, 
+                        0.0, 
+                        0.0
+                    ], 
+                    "yaxis": [
+                        0.0, 
+                        1.0, 
+                        0.0
+                    ]
+                }, 
+                "xsize": 50.0, 
+                "ysize": 25.0, 
+                "zsize": 12.5
+            }
+        }, 
+        {
+            "dtype": "compas.geometry/Box", 
+            "guid": "6afbd394-3baf-4676-a818-0518d98def4a", 
+            "value": {
+                "frame": {
+                    "point": [
+                        157.5, 
+                        0.0, 
+                        0.0
+                    ], 
+                    "xaxis": [
+                        1.0, 
+                        0.0, 
+                        0.0
+                    ], 
+                    "yaxis": [
+                        0.0, 
+                        1.0, 
+                        0.0
+                    ]
+                }, 
+                "xsize": 50.0, 
+                "ysize": 25.0, 
+                "zsize": 12.5
+            }
+        }, 
+        {
+            "dtype": "compas.geometry/Box", 
+            "guid": "b8d622d3-3dfb-41c7-8f2d-14f91897c03d", 
+            "value": {
+                "frame": {
+                    "point": [
+                        210.0, 
+                        0.0, 
+                        0.0
+                    ], 
+                    "xaxis": [
+                        1.0, 
+                        0.0, 
+                        0.0
+                    ], 
+                    "yaxis": [
+                        0.0, 
+                        1.0, 
+                        0.0
+                    ]
+                }, 
+                "xsize": 50.0, 
+                "ysize": 25.0, 
+                "zsize": 12.5
+            }
+        }, 
+        {
+            "dtype": "compas.geometry/Box", 
+            "guid": "ff8f9e97-e557-46e9-8648-ea1153134c78", 
+            "value": {
+                "frame": {
+                    "point": [
+                        262.5, 
+                        0.0, 
+                        0.0
+                    ], 
+                    "xaxis": [
+                        1.0, 
+                        0.0, 
+                        0.0
+                    ], 
+                    "yaxis": [
+                        0.0, 
+                        1.0, 
+                        0.0
+                    ]
+                }, 
+                "xsize": 50.0, 
+                "ysize": 25.0, 
+                "zsize": 12.5
+            }
+        }, 
+        {
+            "dtype": "compas.geometry/Box", 
+            "guid": "bba46817-e3b6-4dd1-a694-abec1e92d57c", 
+            "value": {
+                "frame": {
+                    "point": [
+                        315.0, 
+                        0.0, 
+                        0.0
+                    ], 
+                    "xaxis": [
+                        1.0, 
+                        0.0, 
+                        0.0
+                    ], 
+                    "yaxis": [
+                        0.0, 
+                        1.0, 
+                        0.0
+                    ]
+                }, 
+                "xsize": 50.0, 
+                "ysize": 25.0, 
+                "zsize": 12.5
+            }
+        }, 
+        {
+            "dtype": "compas.geometry/Box", 
+            "guid": "286dbc36-f906-44ac-8e8a-ac9c6065dd7f", 
+            "value": {
+                "frame": {
+                    "point": [
+                        367.5, 
+                        0.0, 
+                        0.0
+                    ], 
+                    "xaxis": [
+                        1.0, 
+                        0.0, 
+                        0.0
+                    ], 
+                    "yaxis": [
+                        0.0, 
+                        1.0, 
+                        0.0
+                    ]
+                }, 
+                "xsize": 50.0, 
+                "ysize": 25.0, 
+                "zsize": 12.5
+            }
+        }, 
+        {
+            "dtype": "compas.geometry/Box", 
+            "guid": "4868e2b7-d7ec-403c-ac4f-6eaef838f8f4", 
+            "value": {
+                "frame": {
+                    "point": [
+                        420.0, 
+                        0.0, 
+                        0.0
+                    ], 
+                    "xaxis": [
+                        1.0, 
+                        0.0, 
+                        0.0
+                    ], 
+                    "yaxis": [
+                        0.0, 
+                        1.0, 
+                        0.0
+                    ]
+                }, 
+                "xsize": 50.0, 
+                "ysize": 25.0, 
+                "zsize": 12.5
+            }
+        }, 
+        {
+            "dtype": "compas.geometry/Box", 
+            "guid": "9508ee65-b173-464e-a9b1-7a3aaefb6a10", 
+            "value": {
+                "frame": {
+                    "point": [
+                        472.5, 
+                        0.0, 
+                        0.0
+                    ], 
+                    "xaxis": [
+                        1.0, 
+                        0.0, 
+                        0.0
+                    ], 
+                    "yaxis": [
+                        0.0, 
+                        1.0, 
+                        0.0
+                    ]
+                }, 
+                "xsize": 50.0, 
+                "ysize": 25.0, 
+                "zsize": 12.5
+            }
+        }
+    ]
+}
