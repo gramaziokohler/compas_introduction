@@ -30,11 +30,11 @@ def movel_to_joints(config, speed, accel, nowait, ip="127.0.0.1"):
     ur_c = RTDEControl(ip)
     ur_c.moveL_FK(config.joint_values, speed, accel, nowait)
 
-def move_to_target(frame, speed, accel, radius, ip="127.0.0.1"):
+def move_to_target(frame, speed, accel, nowait, ip="127.0.0.1"):
     # speed rad/s, accel rad/s^2, nowait bool
-    pose = *frame.point,*frame.axis_angle_vector
+    pose = frame.point.x/1000, frame.point.y/1000, frame.point.z/1000, *frame.axis_angle_vector
     ur_c = RTDEControl(ip)
-    ur_c.moveL(pose ,speed, accel, radius)
+    ur_c.moveL(pose ,speed, accel, nowait)
     return pose
 
 def create_path(frames, speed, accel, radius):
