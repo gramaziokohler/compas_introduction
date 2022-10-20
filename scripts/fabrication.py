@@ -1,6 +1,7 @@
 from rtde_control import RTDEControlInterface as RTDEControl
 from rtde_io import RTDEIOInterface
 from rtde_receive import RTDEReceiveInterface as RTDEReceive
+import time
 
 from compas.geometry import Frame
 from compas.robots import Configuration
