@@ -49,6 +49,6 @@ Clone the repository:
 
 To update your environment:
 
-    (aec22) conda env update -f https://dfab.link/intro22.yml
+    (intro22) conda env update -f https://dfab.link/intro22.yml
 
 
