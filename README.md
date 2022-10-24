@@ -45,6 +45,10 @@ Clone the repository:
     Python: 3.9.13 (CPython)
     Extensions: ['compas-occ', 'compas-rrc', 'compas-view2', 'compas-cgal', 'compas-fab']
 
+### Update installation
 
+To update your environment:
+
+    (aec22) conda env update -f https://dfab.link/intro22.yml
 
 
