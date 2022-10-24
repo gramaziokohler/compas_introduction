@@ -1,0 +1,16 @@
+name: intro22
+channels:
+    - conda-forge
+
+dependencies:
+   - python=3.9
+   - pip
+   - git
+   - compas>=1.17.0
+   - compas_cgal>=0.5.0
+   - compas_occ>=0.6.0
+   - compas_view2>=0.8.0
+   - compas_fab
+   - compas_rrc
+   - pip:
+     - black
