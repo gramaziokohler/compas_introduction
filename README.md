@@ -37,7 +37,7 @@ Clone the repository:
 
 ### Verify installation
 
-    (aec22) python -m compas
+    (intro22) python -m compas
 
     Yay! COMPAS is installed correctly!
 
