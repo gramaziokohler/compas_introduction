@@ -33,7 +33,7 @@ Make sure you run this at least once:
 Clone the repository:
 
     (intro22) cd Documents
-    (intro22) git clone git clone https://github.com/gramaziokohler/compas_introduction.git
+    (intro22) git clone https://github.com/gramaziokohler/compas_introduction.git
 
 ### Verify installation
 
