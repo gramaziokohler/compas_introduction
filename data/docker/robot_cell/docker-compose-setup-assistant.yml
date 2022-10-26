@@ -1,0 +1,14 @@
+version: '2'
+services:
+    moveit-service-setup-assistant:
+        image: gramaziokohler/ros-noetic-moveit:22.07
+        environment:
+            # GUI: To forward the GUI to an external X11 server (eg. XMing), uncomment the following line
+            - DISPLAY=host.docker.internal:0.0
+        volumes:
+            - ./robot_cell_support:/root/catkin_ws/src/robot_cell_support
+            - ./robot_cell_moveit_config:/root/catkin_ws/src/robot_cell_moveit_config
+        command:
+            - roslaunch
+            - moveit_setup_assistant
+            - setup_assistant.launch

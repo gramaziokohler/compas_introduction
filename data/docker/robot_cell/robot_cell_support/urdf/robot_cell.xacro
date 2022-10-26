@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://wiki.ros.org/xacro" name="robot_cell">
+    <xacro:include filename="$(find ur_description)/urdf/inc/ur10e_macro.xacro"/>
+
+    <xacro:ur10e_robot prefix=""/>
+
+    <link name="world" />
+
+    <joint name="rcf_joint" type="fixed">
+        <parent link="world" />
+        <child link="base_link" />
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+    </joint>
+
+</robot>

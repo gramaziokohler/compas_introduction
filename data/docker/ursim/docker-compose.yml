@@ -1,0 +1,12 @@
+version: '2'
+services:
+    ursim:
+        image: universalrobots/ursim_e-series
+        container_name: ursim
+        ports:
+            - "5900:5900"
+            - "6080:6080"
+            - "29999:29999"
+            - "30001-30004:30001-30004"
+        environment:
+            - ROBOT_MODEL=UR10
