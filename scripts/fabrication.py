@@ -13,12 +13,14 @@ def get_config(ip="127.0.0.1"):
     config = Configuration.from_revolute_values(robot_joints)
     return config
 
-
 def get_tcp_offset(ip="127.0.0.1"):
     ur_c = RTDEControl(ip)
     tcp = ur_c.getTCPOffset()
     return tcp
 
+def set_tcp_offset(pose, ip = "127.0.0.1"):
+    ur_c = RTDEControl(ip)
+    ur_c.setTcp(pose)
 
 def move_to_joints(config, speed, accel, nowait, ip="127.0.0.1"):
     # speed rad/s, accel rad/s^2, nowait bool
@@ -54,7 +56,7 @@ def move_to_path(frames, speed, accel, radius, ip = "127.0.0.1"):
     ur_c.moveL(path, True)
     return path
 
-def stop(accel, ip = "127.0.0.1"):
+def stopL(accel, ip = "127.0.0.1"):
     ur_c = RTDEControl(ip)
     ur_c.stopL(accel)
 
@@ -96,6 +98,8 @@ def start_teach_mode(ip="127.0.0.1"):
 def stop_teach_mode(ip="127.0.0.1"):
     ur_c = RTDEControl(ip)
     ur_c.endTeachMode()
+
+
 
 
 if __name__ == "__main__":
