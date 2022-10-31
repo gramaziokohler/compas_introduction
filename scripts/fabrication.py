@@ -2,10 +2,9 @@ from rtde_control import RTDEControlInterface as RTDEControl
 from rtde_io import RTDEIOInterface
 from rtde_receive import RTDEReceiveInterface as RTDEReceive
 import time
-
-from compas.geometry import Frame
+import threading
+from compas.geometry import Frame, Transformation, Translation, Vector, Point
 from compas.robots import Configuration
-
 
 def get_config(ip="127.0.0.1"):
     ur_r = RTDEReceive(ip)
@@ -27,7 +26,6 @@ def move_to_joints(config, speed, accel, nowait, ip="127.0.0.1"):
     ur_c = RTDEControl(ip)
     ur_c.moveJ(config.joint_values, speed, accel, nowait)
 
-
 def movel_to_joints(config, speed, accel, nowait, ip="127.0.0.1"):
     # speed rad/s, accel rad/s^2, nowait bool
     ur_c = RTDEControl(ip)
@@ -39,6 +37,38 @@ def move_to_target(frame, speed, accel, nowait, ip="127.0.0.1"):
     ur_c = RTDEControl(ip)
     ur_c.moveL(pose ,speed, accel, nowait)
     return pose
+
+def pick_and_place_async(pick_frames, place_frames, speed, accel, ip, vaccum_io, safe_dist = 100):
+    thread = threading.Thread(target=pick_and_place, args=(pick_frames, place_frames, speed, accel, ip, vaccum_io, safe_dist))
+    thread.start()
+
+def pick_and_place(pick_frames, place_frames, speed, accel, ip, vaccum_io, safe_dist = 100):
+#move to pick safety plane
+    if isinstance(pick_frames,Frame):
+        pick_frames = [pick_frames]*len(place_frames)
+
+    for pick, place in zip(pick_frames, place_frames):
+        move_to_target(pick.transformed(Translation.from_vector(Vector(0,0,safe_dist))), speed, accel, False, ip = ip)
+        #move to pick plane
+        move_to_target(pick, speed, accel, False, ip = ip)
+        #turn IO on
+        set_digital_io(vaccum_io,True,ip=ip)
+        #sleep on position to give some time to pick up
+        time.sleep(0.5)
+        #move to pick safety plane
+        move_to_target(pick.transformed(Translation.from_vector(Vector(0,0,safe_dist))), speed, accel, False, ip = ip)
+        #move to pre placement frame
+        pre_place_frame = place.transformed(Translation.from_vector(Vector(0,0,safe_dist)))
+        move_to_target(pre_place_frame, speed, accel, False, ip = ip)
+        #move to placement frame
+        move_to_target(place, speed, accel, False, ip = ip)
+        #turn vaccuum off to place brick
+        set_digital_io(vaccum_io,False,ip=ip)
+        #sleep robot to make sure it is placed
+        time.sleep(0.5)
+        #move to post placement frame
+        post_place_frame = place.transformed(Translation.from_vector(Vector(0,0,safe_dist)))
+        move_to_target(post_place_frame, speed, accel, False, ip = ip)
 
 def create_path(frames, speed, accel, radius):
     # speed rad/s, accel rad/s^2, nowait bool
@@ -64,23 +94,19 @@ def get_digital_io(signal, ip="127.0.0.1"):
     ur_r = RTDEReceive(ip)
     return ur_r.getDigitalOutState(signal)
 
-
 def set_digital_io(signal, value, ip="127.0.0.1"):
     io = RTDEIOInterface(ip)
     io.setStandardDigitalOut(signal, value)
 
-
 def set_tool_digital_io(signal, value, ip="127.0.0.1"):
     io = RTDEIOInterface(ip)
     io.setToolDigitalOut(signal, value)
-
 
 def get_tcp_frame(ip="127.0.0.1"):
     ur_r = RTDEReceive(ip)
     tcp = ur_r.getActualTCPPose()
     frame = Frame.from_axis_angle_vector(tcp[3:], point=tcp[0:3])
     return frame
-
 
 def move_trajectory(configurations, speed, accel, blend, ur_c):
     path = []
@@ -89,11 +115,9 @@ def move_trajectory(configurations, speed, accel, blend, ur_c):
     if len(path):
         ur_c.moveJ(path)
 
-
 def start_teach_mode(ip="127.0.0.1"):
     ur_c = RTDEControl(ip)
     ur_c.teachMode()
-
 
 def stop_teach_mode(ip="127.0.0.1"):
     ur_c = RTDEControl(ip)
@@ -101,9 +125,5 @@ def stop_teach_mode(ip="127.0.0.1"):
 
 
 
-
 if __name__ == "__main__":
-    pass
-    # ip = "127.0.0.1"
-    # frame = get_tcp_frame(ip)
-    # print(frame)
+   print(get_config("192.168.10.10"))
