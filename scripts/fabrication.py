@@ -126,4 +126,4 @@ def stop_teach_mode(ip="127.0.0.1"):
 
 
 if __name__ == "__main__":
-   print(get_config("192.168.10.10"))
+#    print(get_config("192.168.10.12"))
