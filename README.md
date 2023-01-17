@@ -2,7 +2,7 @@
 # COMPAS introduction
 
 [📃 COMPAS documentation](https://compas.dev/compas/latest) | 
-[🎦 Slides](https://docs.google.com/presentation/d/1OAHN4htLKiYnj9l3CcVhEU4YvYZ8oU3fdNdkfWTUyZQ/edit)
+[🎦 Slides](https://docs.google.com/presentation/d/1O7gikm_zixRJgeckK2vlUnkcBZXqPbUmIM2Bj3-Do9k/edit?usp=sharing)
 
 ## Installation
 
@@ -21,27 +21,27 @@ Make sure you run this at least once:
 </details>
 
 
-    (base) conda env create -f https://dfab.link/intro22.yml
+    (base) conda env create -f https://dfab.link/intro.yml
 
 ### Add to Rhino
 
-    (base)    conda activate intro22
-    (intro22) python -m compas_rhino.install
+    (base)  conda activate intro
+    (intro) python -m compas_rhino.install
 
 ### Get the workshop files
 
 Clone the repository:
 
-    (intro22) cd Documents
-    (intro22) git clone https://github.com/gramaziokohler/compas_introduction.git
+    (intro) cd Documents
+    (intro) git clone https://github.com/gramaziokohler/compas_introduction.git
 
 ### Verify installation
 
-    (intro22) python -m compas
+    (intro) python -m compas
 
     Yay! COMPAS is installed correctly!
 
-    COMPAS: 1.17.0
+    COMPAS: 1.17.4
     Python: 3.9.13 (CPython)
     Extensions: ['compas-occ', 'compas-rrc', 'compas-view2', 'compas-cgal', 'compas-fab']
 
@@ -49,6 +49,6 @@ Clone the repository:
 
 To update your environment:
 
-    (intro22) conda env update -f https://dfab.link/intro22.yml
+    (intro) conda env update -f https://dfab.link/intro.yml
 
 
